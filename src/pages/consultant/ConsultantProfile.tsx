@@ -32,8 +32,6 @@ export default function ConsultantProfile() {
   } | null>(null);
 
 useEffect(() => {
-    const wallet = localStorage.getItem('wallet');
-    if (!wallet) return;
     const email = localStorage.getItem('email'); // store email in localStorage at login
     supabase
       .from('users')
